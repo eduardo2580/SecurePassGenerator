@@ -3,20 +3,27 @@
 [![CC0 License](https://img.shields.io/badge/License-CC0_1.0_Universal-blue.svg)](LICENSE)
 [![Python 3.8+](https://img.shields.io/badge/Python-3.8%2B-blue.svg)](https://www.python.org/downloads/)
 
-A modern GUI password generator with customizable strength parameters and clipboard integration
+Advanced GUI password generator with cryptographic security and entropy analysis
 
 ![Password Generator Demo](demo-screenshot.png) <!-- Add actual screenshot later -->
 
 ## Features ✨
 
-- **Strength Customization**:
-  - Poor (Letters + Numbers)
-  - Average (+ Special Characters)
-  - Advanced (+ Spaces)
-- **Length Control** (8-64 characters)
-- One-click clipboard integration
-- Automatic dependency management
+- **Custom Character Sets**:
+  - Uppercase/Lowercase letters
+  - Digits
+  - Special characters
+  - Ambiguous character exclusion (l,1,O,0)
+- **Security Features**:
+  - Cryptographically secure generation (`secrets` module)
+  - Real-time entropy calculation (bits)
+  - Strength classification (Weak/Moderate/Strong)
+- **Advanced Controls**:
+  - Length selection (8-32 characters)
+  - Input validation
+  - Copy feedback animation
 - Modern themeable GUI (ttkthemes)
+- Automatic dependency management
 - Cross-platform compatibility
 
 ## Installation 🛠️
@@ -37,20 +44,20 @@ python main.py
 ```
 
 **Interface Guide**:
-1. Select password strength using radio buttons
-2. Choose length with spinbox control
-3. Generate passwords with single click
-4. Copy directly to system clipboard
+1. Select character types using checkboxes
+2. Enable/disable ambiguous characters
+3. Choose password length (8-32)
+4. Generate password with strength feedback
+5. Copy to clipboard with visual confirmation
 
 ## Dependencies 📦
 
-| Package | Version | Purpose |
-|---------|---------|---------|
-| `tkinter` | Built-in | GUI Framework |
-| `ttkthemes` | 3.2.2 | Modern UI Styling |
-| `random` | Built-in | Secure Entropy |
-| `string` | Built-in | Character Sets |
-
+| Package     | Version  | Purpose                |
+|-------------|----------|------------------------|
+| `ttkthemes` | 3.2.2    | Modern UI Styling      |
+| `tkinter`   | Built-in | GUI Framework          |
+| `secrets`   | Built-in | Cryptographic Security |
+| `math`      | Built-in | Entropy Calculation    |
 Full list in [requirements.txt](requirements.txt)
 
 ## License 📜
@@ -78,4 +85,4 @@ We welcome community improvements:
 
 ---
 
-**Security Note**: This tool uses Python's `random` module for demonstration purposes. For production security systems, consider using `secrets` module instead.
+**Security Implementation**: This tool uses Python's `secrets` module for cryptographically secure password generation. Entropy calculations follow NIST SP 800-63 recommendations for password strength estimation.
