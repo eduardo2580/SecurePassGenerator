@@ -5,7 +5,7 @@
 
 Advanced GUI password generator with cryptographic security and entropy analysis
 
-![Password Generator Demo](demo-screenshot.png) <!-- Add actual screenshot later -->
+![Password Generator Demo](demo-screenshot.png)
 
 ## Features ✨
 
