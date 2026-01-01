@@ -1,5 +1,6 @@
 # SecurePass Generator 🔒
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18119423.svg)](https://doi.org/10.5281/zenodo.18119423)
 [![CC0 License](https://img.shields.io/badge/License-CC0_1.0_Universal-blue.svg)](LICENSE)
 [![Python 3.8+](https://img.shields.io/badge/Python-3.8%2B-blue.svg)](https://www.python.org/downloads/)
 
